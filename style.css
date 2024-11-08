@@ -1,0 +1,175 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+}
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+canvas{
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    z-index: 9;
+}
+
+#loop{
+    height: 23%;
+    position: absolute;
+    background-color: #fff;
+    top:30%;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+}
+
+#loop h1{
+    font-size: 140px;
+    animation-name: anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-weight: 100;
+}
+
+h1>span{
+    -webkit-text-stroke: 1.5px black ;
+    color: transparent;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 9;
+    height: 7%;
+    width: 100%;
+}
+nav h1{
+    font-weight: 100;
+}
+
+nav button{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    background-color: black;
+    height: 40px;
+}
+
+@keyframes anim {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#content{
+    position: absolute;
+    top: 60%;
+    left: 6%;
+}
+#content h1{
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#content2{
+    position: absolute;
+    top: 60%;
+    right: 6%;
+    text-align: end;
+}
+#content2 h1{
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#content2 h4{
+    text-align: end;
+    padding-right:35px;
+    padding-top: 15px; 
+}
+
+.left-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    line-height: 50px;
+}
+
+.left-text>h3{
+    font-weight: 100;
+    font-size: smaller;
+}
+
+.left-text h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.right-text{
+    position: absolute;
+    top: 54%;
+    right: 4%;
+    text-align: end;
+    line-height: 50px;
+}
+
+.right-text>h3{
+    font-weight: 100;
+    font-size: smaller;
+    line-height: 25px;
+}
+
+.right-text h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#page2 .right-text>h3{
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#page3 .left-text>h3{
+    font-weight: 100;
+    font-size: smaller;
+    line-height: 25px;
+}
